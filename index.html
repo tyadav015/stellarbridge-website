@@ -1,236 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StellarBridge - Assessment, Training, and Placement Solutions</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: #faf9f6;
-      color: #22314a;
-    }
-    header {
-      background: #f6f5f2;
-      padding: 48px 0 32px 0;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-    }
-    .header-content {
-      max-width: 540px;
-      margin-right: 40px;
-    }
-    .header-content h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin: 0 0 12px 0;
-      color: #22314a;
-    }
-    .header-content h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      margin: 0 0 18px 0;
-      color: #22314a;
-    }
-    .header-content p {
-      font-size: 1.1rem;
-      margin-bottom: 28px;
-      color: #41546a;
-    }
-    .header-content .btn {
-      background: #22314a;
-      color: #fff;
-      border: none;
-      padding: 14px 32px;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .header-graphic {
-      min-width: 180px;
-      max-width: 220px;
-      margin-top: 20px;
-    }
-    /* Solutions Section */
-    section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 48px 16px 0 16px;
-    }
-    .section-title {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #22314a;
-      margin-bottom: 32px;
-    }
-    .solutions-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      margin-bottom: 40px;
-    }
-    .solution-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(50,60,90,0.07);
-      padding: 32px 24px;
-      flex: 1 1 320px;
-      min-width: 260px;
-      max-width: 48%;
-      margin-bottom: 0;
-    }
-    .solution-card h3 {
-      margin: 0 0 10px 0;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #22314a;
-    }
-    .solution-card p {
-      margin: 0;
-      color: #41546a;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-    /* About Section */
-    .about-section {
-      background: #f6f5f2;
-      padding: 48px 0;
-      margin-top: 32px;
-      text-align: left;
-    }
-    .about-section .section-title {
-      margin-bottom: 18px;
-    }
-    .about-section p {
-      max-width: 900px;
-      margin: 0 auto;
-      font-size: 1.08rem;
-      color: #41546a;
-      line-height: 1.7;
-    }
-    /* Footer */
-    footer {
-      background: #22314a;
-      color: #fff;
-      padding: 24px 0 16px 0;
-      text-align: center;
-      font-size: 1rem;
-      position: relative;
-      width: 100%;
-      margin-top: 0;
-    }
-    .footer-nav {
-      margin: 12px 0 6px 0;
-    }
-    .footer-nav a {
-      color: #fff;
-      margin: 0 18px;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
-    }
-    .footer-nav a:hover {
-      text-decoration: underline;
-    }
-    .footer-links {
-      margin-top: 8px;
-      font-size: 0.95rem;
-    }
-    .footer-links a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: underline;
-    }
-    @media (max-width: 900px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      .header-content {
-        margin-right: 0;
-      }
-      .solutions-grid {
-        flex-direction: column;
-        gap: 16px;
-      }
-      .solution-card {
-        max-width: 100%;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StellarWork – Enabling Livelihoods with Purpose</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Poppins:400,600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>StellarBridge</h1>
-      <h2>Assessment, Training,<br>and Placement Solutions</h2>
-      <p>
-        Empowering skill centers, colleges, and employers with tailored services to enhance training outcomes and facilitate job placements.
-      </p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-    <div class="header-graphic">
-      <!-- Simple SVG illustration similar to the image -->
-      <svg width="150" height="120" viewBox="0 0 150 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="75" cy="60" r="60" fill="#e3eaf6"/>
-        <circle cx="50" cy="80" r="18" fill="#23406e"/>
-        <circle cx="100" cy="80" r="18" fill="#23406e"/>
-        <circle cx="75" cy="60" r="22" fill="#23406e"/>
-        <circle cx="75" cy="53" r="7" fill="#fff"/>
-        <polygon points="120,40 128,40 124,32" fill="#23406e"/>
-        <polygon points="30,40 38,40 34,32" fill="#23406e"/>
-        <polygon points="75,20 80,28 70,28" fill="#23406e"/>
-        <rect x="120" y="60" width="12" height="12" rx="3" fill="#23406e"/>
-      </svg>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-flex">
+      <div class="logo">StellarWork</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#model">Our Model</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#partners">Partner With Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <section>
-    <div class="section-title">Our Solutions</div>
-    <div class="solutions-grid">
-      <div class="solution-card">
-        <h3>Training Collaboration</h3>
-        <p>Partnering with skill center and colleges to control and optimize training outcomes.</p>
-      </div>
-      <div class="solution-card">
-        <h3>Assessment Collaboration</h3>
-        <p>Offering robust assessment services to evaluate and improve candidate skills.</p>
-      </div>
-      <div class="solution-card">
-        <h3>Placement Readiness</h3>
-        <p>Preparing students for the job market through comprehensive readiness programs.</p>
-      </div>
-      <div class="solution-card">
-        <h3>Placement Facilitation</h3>
-        <p>Acting as a placement agency to connect qualified candidates with employers.</p>
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Enabling Livelihoods with Purpose</h1>
+      <p>Skilling people. Building dignity. Connecting them to the future of work.</p>
+      <h3>We empower India's underserved youth, women, and workers through real-world training, finishing programs, and retention-focused job placements.</h3>
+      <div class="cta-buttons">
+        <a href="#partners" class="btn btn-primary">Partner With Us</a>
+        <a href="#impact" class="btn btn-secondary">View Our Impact</a>
       </div>
     </div>
   </section>
 
-  <section id="about" class="about-section">
-    <div class="section-title">About Us</div>
-    <p>
-      StellarBridge is dedicated to bridging the gap between education and employment. We work closely with educational institutions and employers to provide customized solutions that enhance training effectiveness and streamline the placement process.
-    </p>
+  <!-- How We Work -->
+  <section class="how-we-work" id="model">
+    <div class="container">
+      <h2>From Potential to Placement — and Beyond</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="icon">🔍</div>
+          <h4>Discover & Assess</h4>
+          <p>Using our Retention Score Index (RSI)</p>
+        </div>
+        <div class="step">
+          <div class="icon">🎓</div>
+          <h4>Skill & Finish</h4>
+          <p>7/14/21 day finishing school modules</p>
+        </div>
+        <div class="step">
+          <div class="icon">🤝</div>
+          <h4>Match & Place</h4>
+          <p>Smart job alignment + verified employer channels</p>
+        </div>
+        <div class="step">
+          <div class="icon">🛡️</div>
+          <h4>Support & Retain</h4>
+          <p>Migration, onboarding & grievance management</p>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Our Solutions -->
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <h2>Our Solutions</h2>
+      <div class="solutions-columns">
+        <div>
+          <h3>For Skill Centres & NGOs</h3>
+          <ul>
+            <li>Training Collaboration</li>
+            <li>Assessment as a Service (RSI)</li>
+            <li>Placement Enablement</li>
+            <li>Campus-to-Job Finishing Models</li>
+          </ul>
+        </div>
+        <div>
+          <h3>For Employers</h3>
+          <ul>
+            <li>Job-Ready Candidate Pipeline</li>
+            <li>Customized Training as per SOPs</li>
+            <li>Retention-First Hiring Support</li>
+            <li>Post-Placement Onboarding & Escalation Handling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why StellarWork Works -->
+  <section class="why-works">
+    <div class="container">
+      <h2>Why StellarWork Works</h2>
+      <ul class="why-list">
+        <li>✅ Behavioral-Intent Based Assessment</li>
+        <li>✅ Adaptive, Employer-Centric Training</li>
+        <li>✅ Post-Placement Retention Support</li>
+        <li>✅ Dedicated Migration & Onboarding Team</li>
+        <li>✅ Transparent Reporting & Dashboards</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Partners & Supporters -->
+  <section class="partners" id="partners">
+    <div class="container">
+      <h2>Our Partners & Supporters</h2>
+      <div class="partner-logos">
+        <img src="https://dummyimage.com/120x40/2a3c5b/fff&text=Skill+Centre" alt="Skill Centre"/>
+        <img src="https://dummyimage.com/120x40/2a3c5b/fff&text=NGO" alt="NGO"/>
+        <img src="https://dummyimage.com/120x40/2a3c5b/fff&text=Employer" alt="Employer"/>
+      </div>
+      <a href="#partners" class="btn btn-primary">Join our partnership network</a>
+    </div>
+  </section>
+
+  <!-- Impact in Numbers -->
+  <section class="impact" id="impact">
+    <div class="container">
+      <h2>Impact in Numbers</h2>
+      <div class="counters">
+        <div>
+          <span class="counter" data-count="12000">0</span>+
+          <p>Lives Touched</p>
+        </div>
+        <div>
+          <span class="counter" data-count="1800">0</span>+
+          <p>Candidates Retained &gt;90 Days</p>
+        </div>
+        <div>
+          <span class="counter" data-count="60">0</span>+
+          <p>Skilling Collaborators</p>
+        </div>
+        <div>
+          <span class="counter" data-count="25">0</span>+
+          <p>Employer Partners</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stories of Change -->
+  <section class="stories">
+    <div class="container">
+      <h2>Stories of Change</h2>
+      <div class="carousel">
+        <div class="story active">
+          <h4>Priya, Bihar</h4>
+          <p>From tailoring apprentice to retail associate at BigBazaar.</p>
+          <blockquote>"StellarWork gave me the confidence and skills to support my family!"</blockquote>
+        </div>
+        <div class="story">
+          <h4>Rahul, Karnataka</h4>
+          <p>Placed as a machine operator after upskilling.</p>
+          <blockquote>"I never thought I'd find a stable job so quickly."</blockquote>
+        </div>
+        <div class="story">
+          <h4>Fatima, UP</h4>
+          <p>Now a team leader in hospitality.</p>
+          <blockquote>"The finishing school changed my life."</blockquote>
+        </div>
+        <button class="carousel-btn prev">&lt;</button>
+        <button class="carousel-btn next">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work With Us -->
+  <section class="cta-block">
+    <div class="container">
+      <h2>Work With Us</h2>
+      <p>Whether you're an employer, skilling partner, or funder — let's unlock potential together.</p>
+      <div class="cta-buttons">
+        <a href="#partners" class="btn btn-primary">Become a Hiring Partner</a>
+        <a href="#contact" class="btn btn-secondary">Refer a Candidate</a>
+        <a href="#contact" class="btn btn-secondary">Sponsor a Training Program</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <div><strong>StellarBridge</strong></div>
-    <div class="footer-nav">
-      <a href="#">Solutions</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </div>
-    <div class="footer-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
+    <div class="container footer-flex">
+      <div>
+        <a href="#contact">Contact</a> | <a href="#careers">Careers</a> | <a href="#privacy">Privacy Policy</a>
+      </div>
+      <div>
+        <span>Address: 123, Stellar Lane, Bengaluru, India</span>
+        <span>Email: info@stellarwork.in</span>
+        <span>
+          <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+        </span>
+      </div>
+      <div>
+        <a href="#">NSU</a> | <a href="#">StellarBridge</a> | <a href="#">StellarWork</a>
+      </div>
     </div>
   </footer>
+
+  <!-- Scripts for counters and carousel -->
+  <script>
+    // Animated Counters
+    document.addEventListener('DOMContentLoaded', function() {
+      const counters = document.querySelectorAll('.counter');
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-count');
+          const count = +counter.innerText;
+          const inc = target / 100;
+          if (count < target) {
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    });
+
+    // Simple Carousel
+    document.addEventListener('DOMContentLoaded', function() {
+      const stories = document.querySelectorAll('.story');
+      let current = 0;
+      const showStory = idx => {
+        stories.forEach((s, i) => s.classList.toggle('active', i === idx));
+      };
+      document.querySelector('.carousel-btn.next').onclick = function() {
+        current = (current + 1) % stories.length;
+        showStory(current);
+      };
+      document.querySelector('.carousel-btn.prev').onclick = function() {
+        current = (current - 1 + stories.length) % stories.length;
+        showStory(current);
+      };
+    });
+  </script>
 </body>
 </html>
+
